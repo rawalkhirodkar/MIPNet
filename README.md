@@ -8,7 +8,7 @@ This repository is the official pytorch python implementation of "[Multi-Instanc
 | [**Project Page**](https://rawalkhirodkar.github.io/mipnet)  | 
 
 <!-- ![Teaser Image](https://rawalkhirodkar.github.io/images/iccv21_mip.png) -->
-<img src=https://rawalkhirodkar.github.io/images/iccv21_mip.png width="40%">
+<img src=https://rawalkhirodkar.github.io/images/iccv21_mip.png width="60%">
 
 Code is coming soon!
 
