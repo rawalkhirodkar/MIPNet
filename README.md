@@ -1,7 +1,7 @@
 # MIPNet: Multi-Instance Pose Networks
 
 [![report](https://img.shields.io/badge/arxiv-report-red)](https://arxiv.org/pdf/2101.11223)
-<!-- [![PWC](https://img.shields.io/badge/PWC-report-blue)](https://rawalkhirodkar.github.io/) -->
+[![PWC](https://img.shields.io/badge/PWC-report-blue)](https://paperswithcode.com/paper/multi-hypothesis-pose-networks-rethinking-top)
 
 This repository is the official pytorch python implementation of "[Multi-Instance Pose Networks: Rethinking Top-Down Pose Estimation](https://arxiv.org/pdf/2101.11223)" in ICCV 2021.
 
