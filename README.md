@@ -19,22 +19,13 @@ Code is coming soon!
 If you find the code useful in your research, please consider citing the paper.
 
 ```
-@article{DBLP:journals/corr/abs-2101-11223,
-            author    = {Rawal Khirodkar and
-                         Visesh Chari and
-                         Amit K. Agrawal and
-                         Ambrish Tyagi},
-            title     = {Multi-Hypothesis Pose Networks: Rethinking Top-Down Pose Estimation},
-            journal   = {CoRR},
-            volume    = {abs/2101.11223},
-            year      = {2021},
-            url       = {https://arxiv.org/abs/2101.11223},
-            archivePrefix = {arXiv},
-            eprint    = {2101.11223},
-            timestamp = {Sun, 31 Jan 2021 17:23:50 +0100},
-            biburl    = {https://dblp.org/rec/journals/corr/abs-2101-11223.bib},
-            bibsource = {dblp computer science bibliography, https://dblp.org}
-          }
+@InProceedings{khirodkar2021pose,
+  author = {Khirodkar, Rawal and Chari, Visesh and Agrawal, Amit and Tyagi, Ambrish},
+  title = {Multi-Instance Pose Networks: Rethinking Top-Down Pose Estimation},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  month = {October},
+  year = {2021}
+}
 ```
 
 
