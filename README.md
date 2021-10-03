@@ -2,6 +2,7 @@
 
 [![report](https://img.shields.io/badge/arxiv-report-red)](https://arxiv.org/pdf/2101.11223)
 [![PWC](https://img.shields.io/badge/PWC-report-blue)](https://paperswithcode.com/paper/multi-hypothesis-pose-networks-rethinking-top)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multi-hypothesis-pose-networks-rethinking-top/pose-estimation-on-ochuman)](https://paperswithcode.com/sota/pose-estimation-on-ochuman?p=multi-hypothesis-pose-networks-rethinking-top)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multi-hypothesis-pose-networks-rethinking-top/multi-person-pose-estimation-on-crowdpose)](https://paperswithcode.com/sota/multi-person-pose-estimation-on-crowdpose?p=multi-hypothesis-pose-networks-rethinking-top)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multi-hypothesis-pose-networks-rethinking-top/keypoint-detection-on-coco)](https://paperswithcode.com/sota/keypoint-detection-on-coco?p=multi-hypothesis-pose-networks-rethinking-top)
 
