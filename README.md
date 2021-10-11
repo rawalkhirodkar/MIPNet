@@ -19,12 +19,13 @@ Code is coming soon!
 If you find the code useful in your research, please consider citing the paper.
 
 ```
-@InProceedings{khirodkar2021pose,
-  author = {Khirodkar, Rawal and Chari, Visesh and Agrawal, Amit and Tyagi, Ambrish},
-  title = {Multi-Instance Pose Networks: Rethinking Top-Down Pose Estimation},
-  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-  month = {October},
-  year = {2021}
+@InProceedings{Khirodkar_2021_ICCV,
+    author    = {Khirodkar, Rawal and Chari, Visesh and Agrawal, Amit and Tyagi, Ambrish},
+    title     = {Multi-Instance Pose Networks: Rethinking Top-Down Pose Estimation},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2021},
+    pages     = {3122-3131}
 }
 ```
 
