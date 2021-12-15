@@ -1,6 +1,5 @@
 EasyDict==1.7
 opencv-python
-cython
 scipy
 pandas
 pyyaml
@@ -14,7 +13,5 @@ seaborn
 flask
 colour
 sklearn
-h5py
 lshashing
 tqdm
-h5py
