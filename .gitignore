@@ -1,8 +1,8 @@
-echo "__pycache__/" >> .gitignore
-echo ".DS_Store" >> .gitignore
-echo "._*" >> .gitignore
-echo "*.pyc" >> .gitignore
-echo "*.ipynb_checkpoints" >> .gitignore
-echo "*.so" >> .gitignore
-echo "*.DS_Store" >> .gitignore
-echo "*._*" >> .gitignore
+__pycache__/
+.DS_Store
+._*
+*.pyc
+*.ipynb_checkpoints
+*.so
+*.DS_Store
+*._*
