@@ -17,24 +17,13 @@ Code with detailed instructions is coming soon!
 
 ## Citation
 If you find the code useful in your research, please consider citing the paper.
-
 ```
-@article{khirodkar2021multi,
-  title={Multi-Hypothesis Pose Networks: Rethinking Top-Down Pose Estimation},
+@inproceedings{khirodkar2021multi,
+  title={Multi-Instance Pose Networks: Rethinking Top-Down Pose Estimation},
   author={Khirodkar, Rawal and Chari, Visesh and Agrawal, Amit and Tyagi, Ambrish},
-  journal={arXiv preprint arXiv:2101.11223},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={3122--3131},
   year={2021}
-}
-```
-We are working on referencing the below version till then please consider citing the above version.
-```
-@InProceedings{Khirodkar_2021_ICCV,
-    author    = {Khirodkar, Rawal and Chari, Visesh and Agrawal, Amit and Tyagi, Ambrish},
-    title     = {Multi-Instance Pose Networks: Rethinking Top-Down Pose Estimation},
-    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-    month     = {October},
-    year      = {2021},
-    pages     = {3122-3131}
 }
 ```
 
