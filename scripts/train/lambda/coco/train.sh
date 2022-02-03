@@ -28,9 +28,13 @@ cd ../../../..
 #      MODEL.SE_MODULES '[True, True, True, True]'
 
 # # # # # # # # # -----------------------------------------------------------
- CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/lambda/train_lambda_real.py \
+## train batch size 32 does not fit in for w48
+## train batch size 10 maybe?
+### test batch size: 64
+
+ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python tools/lambda/train_lambda_real.py \
      --cfg experiments/coco/hrnet/w48_384x288_adam_lr1e-3.yaml \
-     GPUS '(0,1,2,3)' \
+     GPUS '(0,1,2,3,4,5,6,7)' \
      OUTPUT_DIR 'Outputs/outputs/lambda/lambda_coco_real'\
      LOG_DIR 'Outputs/logs/lambda/lambda_coco_real'\
      TEST.MODEL_FILE 'models/pytorch/pose_coco/pose_hrnet_w48_384x288.pth' \
@@ -48,8 +52,8 @@ cd ../../../..
      TRAIN.BEGIN_EPOCH 0 \
      TRAIN.END_EPOCH 110 \
      TRAIN.LR_STEP '(70, 100)' \
-     TRAIN.BATCH_SIZE_PER_GPU 32 \
-     TEST.BATCH_SIZE_PER_GPU 256 \
+     TRAIN.BATCH_SIZE_PER_GPU 10 \
+     TEST.BATCH_SIZE_PER_GPU 64 \
      TEST.USE_GT_BBOX True \
      EPOCH_EVAL_FREQ 1 \
      PRINT_FREQ 100 \

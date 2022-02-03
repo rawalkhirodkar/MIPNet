@@ -112,14 +112,6 @@ def main():
         __file__,
         final_output_dir)
 
-    # copy synthetic dataset file
-    shutil.copy2(
-        os.path.join(this_dir, '../../lib/dataset', cfg.DATASET.SYNTHETIC_DATASET + '.py'),
-        final_output_dir)
-
-
-    # logger.info(pprint.pformat(model))
-
     writer_dict = {
         'writer': SummaryWriter(log_dir=tb_log_dir),
         'train_global_steps': 0,
@@ -244,7 +236,7 @@ def main():
     # -----------------------------------------------
     for epoch in range(begin_epoch, cfg.TRAIN.END_EPOCH):
 
-        # # # train for one epoch
+        # # # # train for one epoch
         print('training on lambda')
         train_lambda(cfg, train_loader, model, criterion_lambda, criterion, optimizer, epoch,
               final_output_dir, tb_log_dir, writer_dict, print_prefix='lambda')
