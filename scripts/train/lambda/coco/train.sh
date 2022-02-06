@@ -32,11 +32,11 @@ cd ../../../..
 ## train batch size 10 maybe?
 ### test batch size: 64
 
- CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python tools/lambda/train_lambda_real.py \
+ CUDA_VISIBLE_DEVICES=0,1,2,3, python tools/lambda/train_lambda_real.py \
      --cfg experiments/coco/hrnet/w48_384x288_adam_lr1e-3.yaml \
-     GPUS '(0,1,2,3,4,5,6,7)' \
-     OUTPUT_DIR 'Outputs/outputs/lambda/lambda_coco_real'\
-     LOG_DIR 'Outputs/logs/lambda/lambda_coco_real'\
+     GPUS '(0,1,2,3,)' \
+     OUTPUT_DIR 'Outputs/outputs/lambda/lambda_coco_real_waffle'\
+     LOG_DIR 'Outputs/logs/lambda/lambda_coco_real_waffle'\
      TEST.MODEL_FILE 'models/pytorch/pose_coco/pose_hrnet_w48_384x288.pth' \
      DATASET.TRAIN_DATASET 'coco_lambda' \
      DATASET.TRAIN_SET 'train2017' \

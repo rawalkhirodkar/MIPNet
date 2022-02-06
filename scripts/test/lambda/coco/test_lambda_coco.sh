@@ -1,4 +1,4 @@
-cd ../../..
+cd ../../../..
 
 # # # # # -----------------------------------------------------------
 # # # # # -----------------------------------------------------------
@@ -75,18 +75,28 @@ cd ../../..
 #     PRINT_FREQ 100 \
 #     TEST.COCO_BBOX_FILE '/home/XYZ/Desktop/datasets/coco/person_detection_results/COCO_test-dev2017_detections_AP_H_609_person.json'
 
-CUDA_VISIBLE_DEVICES=0,1,2 python tools/lambda/test_lambda.py \
+
+DEVICES=0,1,2,3,
+GPUS='(0,1,2,3)'
+CONFIG_FILE='experiments/coco/hrnet/w48_384x288_adam_lr1e-3.yaml'
+CHECKPOINT='/mnt/nas/rawal/Desktop/MIPNet/checkpoints/h48_384x288/checkpoint_103.pth'
+OUTPUT_DIR='Outputs/outputs/lambda/lambda_real/'
+LOG_DIR='Outputs/logs/lambda/lambda_real/'
+IMAGE_DIR='/mnt/nas/rawal/Desktop/MIPNet/coco/images/val2017'
+ANNOTATION_FILE='/mnt/nas/rawal/Desktop/MIPNet/coco/annotations/person_keypoints_val2017.json'
+
+CUDA_VISIBLE_DEVICES=${DEVICES}  python tools/lambda/test_lambda.py \
     --cfg experiments/coco/hrnet/w48_384x288_adam_lr1e-3.yaml \
-    GPUS '(0,1,2)' \
-    OUTPUT_DIR 'Outputs/outputs/lambda/lambda_real/' \
-    LOG_DIR 'Outputs/logs/lambda/lambda_real/' \
-    TEST.MODEL_FILE '/home/XYZ/Desktop/intelligentmix/hrnet/models/lambda/hrnetw48-384x288/checkpoint_103.pth' \
+    GPUS ${GPUS}  \
+    OUTPUT_DIR ${OUTPUT_DIR} \
+    LOG_DIR ${LOG_DIR} \
+    TEST.MODEL_FILE ${CHECKPOINT} \
     DATASET.TEST_DATASET 'coco' \
     DATASET.TEST_SET 'val2017' \
-    DATASET.TEST_IMAGE_DIR '/home/XYZ/Desktop/datasets/coco/images/val2017'\
-    DATASET.TEST_ANNOTATION_FILE '/home/XYZ/Desktop/datasets/coco/annotations/person_keypoints_val2017.json' \
+    DATASET.TEST_IMAGE_DIR ${IMAGE_DIR} \
+    DATASET.TEST_ANNOTATION_FILE ${ANNOTATION_FILE} \
     TEST.USE_GT_BBOX True \
-    TEST.BATCH_SIZE_PER_GPU 256 \
+    TEST.BATCH_SIZE_PER_GPU 128 \
     TEST.POST_PROCESS True \
     MODEL.NAME 'pose_hrnet_se_lambda' \
     MODEL.SE_MODULES '[False, False, True, True]' \
