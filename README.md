@@ -13,7 +13,6 @@ This repository is the official pytorch python implementation of "[Multi-Instanc
 <!-- ![Teaser Image](https://rawalkhirodkar.github.io/images/iccv21_mip.png) -->
 <img src=https://rawalkhirodkar.github.io/images/iccv21_mip.png width="50%">
 
-Code with detailed instructions is coming soon!
 
 ## Model Zoo
 Please find trained model weights in [MODEL_ZOO.md](https://github.com/rawalkhirodkar/MIPNet/blob/main/MODEL_ZOO.md)
