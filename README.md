@@ -1,4 +1,4 @@
-# MIPNet: Multi-Instance Pose Networks
+# MIPNet: Multi-Instance Pose Networks [ICCV 2021]
 
 [![report](https://img.shields.io/badge/arxiv-report-red)](https://arxiv.org/pdf/2101.11223)
 [![PWC](https://img.shields.io/badge/PWC-report-blue)](https://paperswithcode.com/paper/multi-hypothesis-pose-networks-rethinking-top)
